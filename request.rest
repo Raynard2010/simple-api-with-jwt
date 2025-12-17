@@ -1,0 +1,15 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "admin@email.com",
+  "password": "admin123"
+}
+
+### Fail  login
+GET http://localhost:3000/profile
+Authorization: abcde
+
+### Success login
+GET http://localhost:3000/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGVtYWlsLmNvbSIsImlhdCI6MTc2NTk3Njc3MSwiZXhwIjoxNzY1OTgwMzcxfQ.JU8OokkkpI5dkXpcWV-pEUhKCvbk_q4iDlsu2qgMIjQ
